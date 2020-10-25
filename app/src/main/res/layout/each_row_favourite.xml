@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0C0C0C">
+
+
+<RelativeLayout
+    android:layout_centerHorizontal="true"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="15sp"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeContent"
+            android:background="#CB151514"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:id="@+id/NameList"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of the list"
+               android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/priceList"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price of the list"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+
+                android:layout_below="@id/NameList"/>
+
+            <ImageView
+                android:id="@+id/imgFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favourite"
+                   android:layout_below="@id/priceList"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+</RelativeLayout>

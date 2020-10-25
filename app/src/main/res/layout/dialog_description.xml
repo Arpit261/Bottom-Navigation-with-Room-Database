@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Name"
+        android:layout_marginTop="90dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:id="@+id/TxtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="Description"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text="Ok"
+           android:backgroundTint="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ImageDialog"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+         android:src="@mipmap/ic_launcher"
+        app:civ_border_width="2dp"
+        android:padding="10dp"
+        app:civ_border_color="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
